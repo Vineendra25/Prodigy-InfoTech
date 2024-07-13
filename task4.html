@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vineendra - Web Developer</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ddd;
+    }
+    
+    header {
+        background: #333;
+        color: #fff;
+        text-align: center;
+        padding: 1rem 0;
+    }
+    
+    header h1 {
+        margin: 0;
+    }
+    
+    .profile-photo {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        margin-top: 1rem;
+    }
+    
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+        padding: 0;
+        background: #555;
+        margin: 0;
+    }
+    
+    nav ul li {
+        margin: 0 1rem;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        display: block;
+    }
+    
+    nav ul li a:hover {
+        background: #444;
+    }
+    
+    section {
+        padding: 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    
+    h2 {
+        border-bottom: 2px solid #333;
+        padding-bottom: 0.5rem;
+    }
+    
+    .project, .skills {
+        background: #fff;
+        padding: 1rem;
+        margin: 1rem 0;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    form label {
+        margin-top: 1rem;
+    }
+    
+    form input, form textarea, form button {
+        padding: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    form button {
+        background: #333;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background: #555;
+    }
+    
+    .social-media {
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+    
+    .social-media a {
+        margin: 0 0.5rem;
+        color: #333;
+        text-decoration: none;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 1rem 0;
+        background: #333;
+        color: #fff;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hi, I'm Vineendra</h1>
+        <img src="C:\my images\Snapchat-143822903.jpg" alt="Vineendra" class="profile-photo">
+        <p>Passionate Web Developer skilled in HTML, CSS, JavaScript, React, and Node.js</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am Vineendra Pasala, a dedicated web developer with 2 years of experience in building and maintaining responsive websites.</p>
+        <h3>Education</h3>
+        <p>B.Tech in Computer Science from VSM College Of Engineering, 2022.</p>
+        <h3>Professional Experience</h3>
+        <ul>
+            <li>Web Developer at prodigy InfoTech</li>
+            <li>Front-End Developer at Prodigy InfoTech</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Project 1</h3>
+            <p>A web page for using stopwatch which contains start,pause,reset,laps.</p>
+            <a href="file:///C:/Users/vinee/OneDrive/Desktop/prodigy/task2.html" target="_blank">View Project</a>
+        </div>
+        <div class="project">
+            <h3>Project 2</h3>
+            <p>A web page for playing an interesting game Tic-Tac-Toe,it also displays who is the winner and we can reset it for playing again.</p>
+            <a href="file:///C:/Users/vinee/OneDrive/Desktop/prodigy/task3.html" target="_blank">View Project</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Technical Skills</h3>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React</li>
+            <li>Node.js</li>
+            <li>Git</li>
+            <li>SQL/NoSQL Databases</li>
+        </ul>
+        <h3>Soft Skills</h3>
+        <ul>
+            <li>Problem-solving</li>
+            <li>Communication</li>
+            <li>Team Collaboration</li>
+            <li>Time Management</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="form-message"></div>
+        <div class="social-media">
+            <a href="https://www.linkedin.com/in/vineendra-pasala-58aa312b2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">LinkedIn</a>
+            <a href="https://github.com/Vineendra25" target="_blank">GitHub</a>
+            <a href="https://telegram.org/dl" target="_blank">Telegram</a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Vineendra. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    document.getElementById('form-message').innerText = Thank you for your message, ${name}!;
+    });
+    </script>
+</body>
+</html>
